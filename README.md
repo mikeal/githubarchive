@@ -7,7 +7,7 @@ $ npm install githubarchive
 ###### Usage
 
 ```javascript
-var archive = require('archive')
+var archive = require('githubarchive')
 archive('http://data.githubarchive.org/2012-04-11-15.json.gz').languages(function (err, langs) {
   if (err) throw err
   console.log(langs) // a hash of the language count in that days activity
@@ -17,7 +17,7 @@ archive('http://data.githubarchive.org/2012-04-11-15.json.gz').languages(functio
 Or, alternatively from a file already downloaded.
 
 ```javascript
-var archive = require('archive')
+var archive = require('githubarchive')
 archive(path.join(__dirname, '2012-04-11-15.json.gz')).languages(function (err, langs) {
   if (err) throw err
   console.log(langs) // a hash of the language count in that days activity
