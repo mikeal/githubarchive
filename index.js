@@ -59,7 +59,7 @@ function wrap (obj) {
   return obj
 }
 
-module.exports.fetch = function (url) {
+module.exports.request = function (url) {
   return wrap(request(url).pipe(zlib.createGunzip()).pipe(jsonstream.parse()))
 }
 
