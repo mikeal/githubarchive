@@ -33,11 +33,21 @@ I need more parsers! Pull requests welcome for anything even moderately useful, 
 All parsers are streams and expect to have a JSONStream piped to them. If you want to handle the acquisition yourself it would look like this.
 
 ```javascript
-request(url).pipe(zlib.createGunzip()).pipe(jsonstream.parse()).pipe(githubarchive.languages(function (e, langs) {}))
+request(url)
+  .pipe(zlib.createGunzip())
+  .pipe(jsonstream.parse())
+  .pipe(githubarchive.languages(function (e, langs) {
+    // do stuff
+  }))
 ```
 
 Or, alternatively from a file.
 
 ```javascript
-fs.createFileStream(path).pipe(zlib.createGunzip()).pipe(jsonstream.parse()).pipe(githubarchive.languages(function (e, langs) {}))
+fs.createFileStream(path)
+  .pipe(zlib.createGunzip())
+  .pipe(jsonstream.parse())
+  .pipe(githubarchive.languages(function (e, langs) {
+    // do stuff
+  }))
 ```
