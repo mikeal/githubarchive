@@ -1,0 +1,22 @@
+{
+  "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.mikealrogers.com)",
+  "name": "githubarchive",
+  "description": "Streaming parsers for the github archive.",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/mikeal/githubarchive"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "dependencies": {
+    "request": "~2.11.4",
+    "JSONStream": "~0.4.2"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
