@@ -1,5 +1,7 @@
 ### githubarchive -- Streaming parsers for the github archive.
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mikeal/githubarchive.svg)](https://greenkeeper.io/)
+
 ###### Install
 
 $ npm install githubarchive
